@@ -50,7 +50,7 @@ function httpRequest(ipaddress)
     request.send()
 }
 
-function settingMap(latitude=0,longitude=0)
+function settingMap(latitude=34.05223,longitude=-118.24368)
 {
     myMap.setView([latitude,longitude ],13)
 
