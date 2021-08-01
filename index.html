@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Include Leaflet CSS file in the head section-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Include style css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ip Address Tracker   </title>
+</head>
+<body>
+    
+    <section class="search-section">
+    
+        <div class="banner">
+            <h1>Ip Address Tracker</h1>
+            <input id='ip-input' type="text" placeholder="Search for Any Ip address or domain">
+            <img id='btn-search' class="btn-search" src='./images/icon-arrow.svg'></img>    
+            <p id='error-message'>*Please Enter Valid Ip Address Or Domain</p>
+        
+            <div class='my-data-card'>
+            
+                <div>
+                    <p>IP Address</p>
+                    <h3 id='ip'></h3>
+                </div>
+                <div>
+                    <p >location</p>
+                    <h3 id='location'></h3>
+                </div>
+                <div>
+                    <p>TimeZone</p>
+                    <h3 id='time-zone'></h3>
+                </div>
+                <div>
+                    <p>ISP</p>
+                    <h3 id='isp'></h3>
+                </div>
+            
+            </div>
+        </div>
+
+    </section>
+        <div id='mapid'>
+        </div>
+
+
+    <!-- Start Scripts-->
+    
+    <!--Include Leaflet JavaScript file -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!--Include Script File-->
+    <script src='js/constants.js'></script>
+    <script src='js/script.js'></script>
+    <!-- End Scripts-->
+</body>
+</html>

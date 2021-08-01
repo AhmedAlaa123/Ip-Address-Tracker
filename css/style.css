@@ -1,0 +1,117 @@
+:root{
+    --vdarkgray-: hsl(0, 0%, 17%);
+    --darkgray-: hsl(0, 0%, 59%)
+
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.search-section{
+   
+    
+    position: relative;
+}
+.search-section .banner{
+    padding-top: 20px; 
+    text-align: center;
+    color: #fff;
+    background-image: url(../images/pattern-bg.png);
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    height: 50vh;
+}
+.search-section h1 {
+    font-weight: 700;
+}
+.search-section #error-message{
+    color: red;
+    display: none;
+}
+.search-section input{
+    padding:10px 20px;
+    outline: none;
+    width: 400px;
+    font-size: 18px;
+    border:none;
+    border-radius: 10px 0 0 10px;
+    margin-right: 0;
+}
+@media (max-width:545px) {
+    .search-section input{
+        width: 75%;
+    }
+}
+.search-section .btn-search{
+    padding: 12px 20px;
+    background-color: hsl(0, 0%, 17%);
+    height: 46px;
+    margin-bottom: -17px;
+    margin-left: -4px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.search-section .my-data-card {
+    /* overflow-y: scroll; */
+    background-color: #fff;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    top: 74%;
+    z-index: 100000;
+    transform: translateY(-50%);
+    color: #000;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: var(--darkgray-) 5px 5px 10px;
+}
+.my-data-card div{
+    text-align: left;
+    width: 100%;
+    padding-left: 10px
+}
+.my-data-card div:not(:last-child)
+{
+    border-right: 1px solid hsl(0, 0%, 59%);
+    padding-right: 10px;
+}
+
+@media (max-width:665px) {
+    .search-section .my-data-card{
+        display: block;
+        width: 90%;
+        left: 5%;
+        top: 70%    ;
+        /* transform: translateY(-40%); */
+        margin-bottom: 0;
+        
+    }
+    .my-data-card div:not(:last-child){
+        border: none;
+    }
+    .my-data-card div{
+        text-align: center;
+        
+    }
+}
+.search-section .my-data-card p{
+    color: var(--darkgray-);
+    font-weight: 400;
+}
+.search-section .my-data-card h3{
+    color: var(--vdarkgray-);
+    font-weight: 700;
+}
+#mapid{
+    height: 50vh;
+
+}
